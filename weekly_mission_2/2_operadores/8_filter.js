@@ -8,7 +8,7 @@ const scores = [
     { name: 'M', score: 85 },
     { name: 'J', score: 100 },
   ]
-  
+  //Imprime los valores mayores a 80
   const scoresGreaterEighty = scores.filter((score) => score.score > 80)
   console.log("Ejemplo 8: Filtrando elementos por score")
   console.log(scoresGreaterEighty)

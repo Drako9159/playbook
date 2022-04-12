@@ -18,4 +18,5 @@ const myObject3 = {
   console.log(myObject3)
   console.log(myObject3.name)
   console.log(myObject3["address"])
+  console.log(myObject3["nicknames"])
   
