@@ -1,16 +1,15 @@
 const user = {
-    name: "Antonio Jaramillo",
     user: "@Drako9159",
-    username: "drako9159",
-    bio: "full stack developer",
-    age: 25,
-    getGeneralInfo: function(){
-      return `This account ${this.username} has bio "${this.bio}"`
+    trending_topic: "Guerra en Ucrania",
+    hashtag: "#ViernesSanto",
+    
+    getTrending: function(){
+      return `Lo trending del día es ${this.trending_topic}"`
     },
-    getEdad: function(){
-      return `${this.name} is ${this.age} years old`
+    getHashtag: function(){
+      return `El hashtag del día es ${this.hashtag}`
     }
    }
-   console.log("Username:" + user.user)
-   console.log(user.getGeneralInfo())
-   console.log(user.getEdad())
+   console.log("User:" + user.user)
+   console.log(user.getTrending())
+   console.log(user.getHashtag())

@@ -1,14 +1,16 @@
 const user = {
-    username: "Antonio Jaramillo",
+    user: "Antonio Jaramillo",
+    post: "Ya te quiero volver a ver",
     bio: "The older I get, the more I realize what really matters in life",
-    age: 25,
-    getGeneralInfo: function(){
-      return `This account ${this.username} has bio "${this.bio}"`
+    
+    getPost: function(){
+      return `Mi post es "${this.post}"`
     },
-    getEdad: function(){
-        return `${this.username} is ${this.age} years old`
+    getBio: function(){
+        return `Biography by ${this.user} : "${this.bio}"`
       }
    }
-   console.log("Username:" + user.username)
-   console.log(user.getGeneralInfo())
-   console.log(user.getEdad())
+   
+   console.log("Username :" + user.user)
+   console.log(user.getPost())
+   console.log(user.getBio())
