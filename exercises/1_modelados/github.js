@@ -14,7 +14,6 @@ const repo = {
       return `This repository ${this.name} was created by ${this.author}`
     }
    }
-   
-   console.log("Nombre del repo:" + repo.name)
+   console.log("Nombre del repo: " + repo.name)
    console.log("Issues totales: " + repo.getTotalIssues())
    console.log(repo.getGeneralInfo())

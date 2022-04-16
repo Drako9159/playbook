@@ -7,10 +7,9 @@ const user = {
       return `Mi post es "${this.post}"`
     },
     getBio: function(){
-        return `Biography by ${this.user} : "${this.bio}"`
+        return `Biography by ${this.user}: "${this.bio}"`
       }
    }
-   
    console.log("Username :" + user.user)
    console.log(user.getPost())
    console.log(user.getBio())

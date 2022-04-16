@@ -4,7 +4,7 @@ const user = {
     hashtag: "#ViernesSanto",
     
     getTrending: function(){
-      return `Lo trending del día es ${this.trending_topic}"`
+      return `Lo trending del día es "${this.trending_topic}"`
     },
     getHashtag: function(){
       return `El hashtag del día es ${this.hashtag}`
