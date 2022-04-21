@@ -1,5 +1,4 @@
 class User{
-    
     /*Requerimiento 1: Se necesita un modelo `User` para guardar la información de un usuario de nuestra app: `id`, `username`, `name`, `bio`, `dateCreated` y `lastUpdated`. 
     constructor(id, username, name, bio, dateCreated, lastUpdated){
         this.id = id

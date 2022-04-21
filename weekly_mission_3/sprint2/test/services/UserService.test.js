@@ -4,7 +4,6 @@ describe("Test for UserService", () => {
     /*Requerimiento 1*/
     test("1 Create a new user using the UserService", () => {
         const user = UserService.create(1, "drako9159", "Antonio")
-
         expect(user.username).toBe("drako9159")
         expect(user.name).toBe("Antonio")
         expect(user.id).toBe(1)
@@ -37,3 +36,4 @@ describe("Test for UserService", () => {
         expect(usernames).toContain("drako9159(3)")
     })
 })
+
