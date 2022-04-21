@@ -1,6 +1,7 @@
 const User = require('../../app/models/user.js')
-/*Requerimento 1
+/*Requerimento 1*/
 describe("Unit tests for user class", () => {
+    /*
     test('Create an User objet', () => {
         //Aquí se invoca el código que se va a usar en nuestra app
         const user = new User(1, "drako9159", "Antonio", "Bio", "dateCreated", "lastUpdated")
@@ -11,10 +12,8 @@ describe("Unit tests for user class", () => {
         expect(user.bio).toBe("Bio")
         expect(user.dateCreated).toBe("dateCreated")
         expect(user.lastUpdated).toBe("lastUpdated")
-    })
-})*/
-/*Requerimento 2
-describe("Unit tests for user class", () => {
+    })*/
+/*Requerimento 2*/
     test('Create an User objet', () => {
         //Aquí se invoca el código que se va a usar en nuestra app
         const user = new User(1, "drako9159", "Antonio", "Bio")
@@ -26,9 +25,8 @@ describe("Unit tests for user class", () => {
         expect(user.dateCreated).not.toBeUndefined() //Verifica que el valor no se indefinido
         expect(user.lastUpdated).not.toBeUndefined()
     })
-})*/
-/*Requerimiento 3
-describe("Unit tests for user class", () => {
+/*Requirimiento 3
+describe("Unit tests for user class", () => {*/
     test('Add getters', () => {
         //Aquí se invoca el código que se va a usar en nuestra app
         const user = new User(1, "drako9159", "Antonio", "Bio")
@@ -40,16 +38,14 @@ describe("Unit tests for user class", () => {
         expect(user.getDateCreated).not.toBeUndefined() //Verifica que el valor no se indefinido
         expect(user.getLastUpdated).not.toBeUndefined()
     })
-})*/
-/*Requerimiento 4*/
-describe("Unit tests for user class", () => {
+/*Requerimiento 4
+describe("Unit tests for user class", () => {*/
     test('Add getters', () => {
         //Aquí se invoca el código que se va a usar en nuestra app
         const user = new User(1, "drako9159", "Antonio", "Bio")
         //Se validan los resultados
         user.setUsername = "Drako"
         expect(user.username).toBe("Drako")
-
         user.setBio = "New bio"
         expect(user.bio).toBe("New bio")
     })
