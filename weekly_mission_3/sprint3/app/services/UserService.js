@@ -23,10 +23,7 @@ class UserService {
             payload = "necesitan tener un valor válido"
             return new User(payload)
         }
-        //Requerimiento4//
-        //const newList = payload.find((a) => a.name = "username")
-        //const runer = payload.map(function(a){return a.name}) //.forEach(a => {return a.name})
-        //name = newList
+        //requerimiento4//
         return new User(payload, name, username, id)
     } 
 }
