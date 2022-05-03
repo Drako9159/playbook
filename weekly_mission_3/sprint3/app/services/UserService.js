@@ -3,9 +3,13 @@ const User = require('../models/user.js')
 class UserService {
     //Requerimiento1//
     static payloadNull(payload){
+        const findUser = payload.some((a) => a.username === "Username")
         payload = "payload no existe"
         return new User(payload)
     }
+    
+
+
     static payloadObjet(payload, name, username, id){
        //Requerimiento2//
         const findNull0 = payload.some((a) => a.username === null)
@@ -26,5 +30,8 @@ class UserService {
         //requerimiento4//
         return new User(payload, name, username, id)
     } 
+    
+    
 }
+
 module.exports = UserService
